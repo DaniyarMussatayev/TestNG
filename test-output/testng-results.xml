@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25923" started-at="2020-08-30T23:24:38 ALMT" finished-at="2020-08-30T23:25:04 ALMT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25923" started-at="2020-08-30T23:24:38 ALMT" finished-at="2020-08-30T23:25:04 ALMT">
+      <class name="com.syntax.class02.TC1">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class02.TC1@6ebc05a6]" name="openBrowser" is-config="true" duration-ms="7470" started-at="2020-08-30T23:24:38 ALMT" finished-at="2020-08-30T23:24:46 ALMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.syntax.class02.TC1@6ebc05a6]" name="Login" duration-ms="5030" started-at="2020-08-30T23:24:46 ALMT" finished-at="2020-08-30T23:24:51 ALMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="labelsDisplayed()[pri:0, instance:com.syntax.class02.TC1@6ebc05a6]" name="labelsDisplayed" duration-ms="12731" started-at="2020-08-30T23:24:51 ALMT" finished-at="2020-08-30T23:25:04 ALMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- labelsDisplayed -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class02.TC1@6ebc05a6]" name="closeBrowser" is-config="true" duration-ms="656" started-at="2020-08-30T23:25:04 ALMT" finished-at="2020-08-30T23:25:04 ALMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.syntax.class02.TC1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
