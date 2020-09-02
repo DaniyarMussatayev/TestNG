@@ -13,7 +13,7 @@ public class SoftAssertionExample {
 
 	public static WebDriver driver;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void openBrowser() {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -21,7 +21,7 @@ public class SoftAssertionExample {
 		// driver.manage().window().maximize();
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void closeBrowser() {
 		driver.quit();
 	}
@@ -50,8 +50,8 @@ public class SoftAssertionExample {
 		Thread.sleep(3000);
 		
 		System.out.println("I am a text after the assertion");
-		System.out.println(" --- This is the end of the test ---- ");
+		System.out.println(" ---  This is the end of the test ---- ");
 		
-		softAssertion.assertAll();
+		softAssertion.assertAll();//to throw all failed assertions
 	}
 }
