@@ -24,10 +24,10 @@ public class GroupsExample {
 		driver.quit();
 	}
 
-	@Test(groups="smoke")
+	@Test(groups = "Smoke")
 	public void validLogin() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
-		driver.findElement(By.id("txtPasswords")).sendKeys("Hum@nhrm123");
+		driver.findElement(By.id("txtPassword")).sendKeys("Hum@nhrm123");
 		driver.findElement(By.cssSelector("input#btnLogin")).click();
 		String welcomeText = driver.findElement(By.id("welcome")).getText();
 		if (welcomeText.contains("Admin")) {
@@ -37,8 +37,7 @@ public class GroupsExample {
 		}
 	}
 
-	@Test(groups="regression")//if validLogin pass ONLY then execute invalidLogin
-								//otherwise if validLogin fails then DO NOT EXECUTE invalidLogin (invalid Login test will be skipped)
+	@Test(groups = "regression")
 	public void invalidLogin() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.cssSelector("input#btnLogin")).click();
