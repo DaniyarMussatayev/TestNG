@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.syntax.class02.TC1">
+      <class name="com.syntax.class03.LoginPageTest">
         <methods>
-          <include name="openBrowser"/>
+          <include name="multipleLogin" invocation-numbers="0 1 2"/>
           <include name="closeBrowser"/>
-          <include name="labelsDisplayed"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.syntax.class02.TC1 -->
+      </class> <!-- com.syntax.class03.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

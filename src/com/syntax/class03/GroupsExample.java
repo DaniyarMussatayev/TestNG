@@ -1,4 +1,4 @@
-package com.syntax.class02;
+package com.syntax.class03;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Dependency {
+public class GroupsExample {
 	public static WebDriver driver;
 
 	@BeforeMethod(alwaysRun = true)
@@ -24,7 +24,7 @@ public class Dependency {
 		driver.quit();
 	}
 
-	@Test
+	@Test(groups="smoke")
 	public void validLogin() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPasswords")).sendKeys("Hum@nhrm123");
@@ -37,7 +37,7 @@ public class Dependency {
 		}
 	}
 
-	@Test(dependsOnMethods = "validLogin")//if validLogin pass ONLY then execute invalidLogin
+	@Test(groups="regression")//if validLogin pass ONLY then execute invalidLogin
 								//otherwise if validLogin fails then DO NOT EXECUTE invalidLogin (invalid Login test will be skipped)
 	public void invalidLogin() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");

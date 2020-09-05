@@ -1,29 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25923" started-at="2020-08-30T23:24:38 ALMT" finished-at="2020-08-30T23:25:04 ALMT">
+  <suite name="Default suite" duration-ms="57835" started-at="2020-09-05T18:51:21 ALMT" finished-at="2020-09-05T18:52:19 ALMT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25923" started-at="2020-08-30T23:24:38 ALMT" finished-at="2020-08-30T23:25:04 ALMT">
-      <class name="com.syntax.class02.TC1">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class02.TC1@6ebc05a6]" name="openBrowser" is-config="true" duration-ms="7470" started-at="2020-08-30T23:24:38 ALMT" finished-at="2020-08-30T23:24:46 ALMT">
+    <test name="Default test" duration-ms="57835" started-at="2020-09-05T18:51:21 ALMT" finished-at="2020-09-05T18:52:19 ALMT">
+      <class name="com.syntax.class03.LoginPageTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class03.LoginPageTest@64729b1e]" name="openBrowser" is-config="true" duration-ms="7293" started-at="2020-09-05T18:51:21 ALMT" finished-at="2020-09-05T18:51:28 ALMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.syntax.class02.TC1@6ebc05a6]" name="Login" duration-ms="5030" started-at="2020-08-30T23:24:46 ALMT" finished-at="2020-08-30T23:24:51 ALMT">
+        <test-method status="PASS" signature="multipleLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.class03.LoginPageTest@64729b1e]" name="multipleLogin" duration-ms="13465" started-at="2020-09-05T18:51:28 ALMT" data-provider="getData" finished-at="2020-09-05T18:51:42 ALMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hum@nhrm123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="labelsDisplayed()[pri:0, instance:com.syntax.class02.TC1@6ebc05a6]" name="labelsDisplayed" duration-ms="12731" started-at="2020-08-30T23:24:51 ALMT" finished-at="2020-08-30T23:25:04 ALMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- labelsDisplayed -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class02.TC1@6ebc05a6]" name="closeBrowser" is-config="true" duration-ms="656" started-at="2020-08-30T23:25:04 ALMT" finished-at="2020-08-30T23:25:04 ALMT">
+        </test-method> <!-- multipleLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class03.LoginPageTest@64729b1e]" name="closeBrowser" is-config="true" duration-ms="694" started-at="2020-09-05T18:51:42 ALMT" finished-at="2020-09-05T18:51:43 ALMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.syntax.class02.TC1 -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class03.LoginPageTest@64729b1e]" name="openBrowser" is-config="true" duration-ms="6658" started-at="2020-09-05T18:51:43 ALMT" finished-at="2020-09-05T18:51:49 ALMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="multipleLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.class03.LoginPageTest@64729b1e]" name="multipleLogin" duration-ms="10742" started-at="2020-09-05T18:51:49 ALMT" data-provider="getData" finished-at="2020-09-05T18:52:00 ALMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[JohnTest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Syntax123!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class03.LoginPageTest@64729b1e]" name="closeBrowser" is-config="true" duration-ms="688" started-at="2020-09-05T18:52:00 ALMT" finished-at="2020-09-05T18:52:01 ALMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class03.LoginPageTest@64729b1e]" name="openBrowser" is-config="true" duration-ms="6694" started-at="2020-09-05T18:52:01 ALMT" finished-at="2020-09-05T18:52:07 ALMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="multipleLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.class03.LoginPageTest@64729b1e]" name="multipleLogin" duration-ms="10863" started-at="2020-09-05T18:52:07 ALMT" data-provider="getData" finished-at="2020-09-05T18:52:18 ALMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KokaL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kokaytvyn$12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Koka]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class03.LoginPageTest@64729b1e]" name="closeBrowser" is-config="true" duration-ms="689" started-at="2020-09-05T18:52:18 ALMT" finished-at="2020-09-05T18:52:19 ALMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.syntax.class03.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
