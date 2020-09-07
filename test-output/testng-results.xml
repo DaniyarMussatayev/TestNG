@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="10374" started-at="2020-09-05T22:12:25 ALMT" finished-at="2020-09-05T22:12:35 ALMT">
+  <suite name="Default suite" duration-ms="32109" started-at="2020-09-07T20:36:15 ALMT" finished-at="2020-09-07T20:36:47 ALMT">
     <groups>
-      <group name="regression">
-        <method signature="GroupsExample.invalidLogin()[pri:0, instance:com.syntax.class03.GroupsExample@6acdbdf5]" name="invalidLogin" class="com.syntax.class03.GroupsExample"/>
-      </group> <!-- regression -->
     </groups>
-    <test name="Regression Test" duration-ms="10374" started-at="2020-09-05T22:12:25 ALMT" finished-at="2020-09-05T22:12:35 ALMT">
-      <class name="com.syntax.class03.GroupsExample">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class03.GroupsExample@6acdbdf5]" name="openBrowser" is-config="true" duration-ms="9466" started-at="2020-09-05T22:12:25 ALMT" finished-at="2020-09-05T22:12:35 ALMT">
+    <test name="Default test" duration-ms="32109" started-at="2020-09-07T20:36:15 ALMT" finished-at="2020-09-07T20:36:47 ALMT">
+      <class name="com.syntax.class02.TC1">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class02.TC1@711f39f9]" name="openBrowser" is-config="true" duration-ms="8357" started-at="2020-09-07T20:36:15 ALMT" finished-at="2020-09-07T20:36:23 ALMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="invalidLogin()[pri:0, instance:com.syntax.class03.GroupsExample@6acdbdf5]" name="invalidLogin" duration-ms="184" started-at="2020-09-05T22:12:35 ALMT" finished-at="2020-09-05T22:12:35 ALMT">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.syntax.class02.TC1@711f39f9]" name="Login" duration-ms="4226" started-at="2020-09-07T20:36:23 ALMT" finished-at="2020-09-07T20:36:27 ALMT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class03.GroupsExample@6acdbdf5]" name="closeBrowser" is-config="true" duration-ms="684" started-at="2020-09-05T22:12:35 ALMT" finished-at="2020-09-05T22:12:35 ALMT">
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="labelsDisplayed()[pri:0, instance:com.syntax.class02.TC1@711f39f9]" name="labelsDisplayed" duration-ms="18782" started-at="2020-09-07T20:36:27 ALMT" finished-at="2020-09-07T20:36:46 ALMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- labelsDisplayed -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class02.TC1@711f39f9]" name="closeBrowser" is-config="true" duration-ms="665" started-at="2020-09-07T20:36:46 ALMT" finished-at="2020-09-07T20:36:47 ALMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.syntax.class03.GroupsExample -->
-    </test> <!-- Regression Test -->
-  </suite> <!-- Regression Suite -->
+      </class> <!-- com.syntax.class02.TC1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
